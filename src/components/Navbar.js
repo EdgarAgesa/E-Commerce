@@ -54,8 +54,7 @@ function Navbar() {
 
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <Link to="/offer">What we offer</Link>
-        <Link to="#Sell with us">Sell with us</Link>
-        <Link to="#locations">Locations</Link>
+        <Link to="/sell with us">Sell with us</Link>
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>

@@ -1,0 +1,28 @@
+.sell-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .signup-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
