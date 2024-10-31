@@ -53,7 +53,7 @@ function Navbar() {
       </div>
 
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <Link to="#What we offer">What we offer</Link>
+        <Link to="/offer">What we offer</Link>
         <Link to="#Sell with us">Sell with us</Link>
         <Link to="#locations">Locations</Link>
       </div>

@@ -7,6 +7,7 @@ import Slides from './components/Slide';
 import ItemDetails from './components/ItemDetails';
 import { CartProvider } from './contexts/CartContext'; 
 import Cart from './components/Cart';
+import Offer from './components/offer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Slides />} />
           <Route path="/items/:id" element={<ItemDetails />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/offer" element={<Offer />} />
         </Routes>
         <Footer />
       </div>
