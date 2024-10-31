@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-section {
+    width: 18%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #f2f2f2;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-social, .footer-payment, .footer-brands {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-social h3, .footer-payment h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #bbb;
+    margin: 0 8px;
+  }
+  
+  .payment-icons i {
+    font-size: 2rem;
+    color: #bbb;
+    margin: 0 10px;
+  }
+  
+  .footer-brands ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-brands ul li {
+    margin: 0 15px;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
