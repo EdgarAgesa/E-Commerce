@@ -11,7 +11,7 @@ function Navbar() {
   const { cart } = useCart();
 
   useEffect(() => {
-    fetch("https://shopit-server-7dj9.onrender.com/categories")
+    fetch("https://shopit-server-lody.onrender.com/categories")
       .then((response) => response.json())
       .then((categories) => {
         const allItems = categories.flatMap(category => category.items);

@@ -12,7 +12,7 @@ const ItemDetails = () => {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    axios.get('https://shopit-server-7dj9.onrender.com/categories')
+    axios.get('https://shopit-server-lody.onrender.com/categories')
       .then(response => {
         const allCategories = response.data;
         

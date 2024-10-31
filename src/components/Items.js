@@ -10,7 +10,7 @@ const FoodList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://shopit-server-7dj9.onrender.com/categories')
+    axios.get('https://shopit-server-lody.onrender.com/categories')
       .then(response => {
         const allCategories = response.data;
         setCategories(allCategories);
@@ -29,7 +29,7 @@ const FoodList = () => {
     const categoryName = event.target.value;
     setSelectedCategory(categoryName);
 
-    axios.get('https://shopit-server-7dj9.onrender.com/categories')
+    axios.get('https://shopit-server-lody.onrender.com/categories')
       .then(response => {
         if (categoryName === "All") {
           const allItems = response.data.flatMap(category => category.items);
