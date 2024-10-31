@@ -8,10 +8,10 @@ function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [data, setData] = useState([]);
-  const { cart } = useCart(); // Access cart
+  const { cart } = useCart();
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://shopit-server-7dj9.onrender.com/categories")
       .then((response) => response.json())
       .then((categories) => {
         const allItems = categories.flatMap(category => category.items);

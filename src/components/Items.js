@@ -10,12 +10,11 @@ const FoodList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/categories')
+    axios.get('https://shopit-server-7dj9.onrender.com/categories')
       .then(response => {
         const allCategories = response.data;
         setCategories(allCategories);
         
-        // Load all items initially
         const allItems = allCategories.flatMap(category => category.items);
         setItems(allItems);
       })
@@ -30,8 +29,7 @@ const FoodList = () => {
     const categoryName = event.target.value;
     setSelectedCategory(categoryName);
 
-    // Filter items based on the selected category
-    axios.get('http://localhost:5000/categories')
+    axios.get('https://shopit-server-7dj9.onrender.com/categories')
       .then(response => {
         if (categoryName === "All") {
           const allItems = response.data.flatMap(category => category.items);
@@ -46,7 +44,6 @@ const FoodList = () => {
 
   return (
     <div>
-      {/* Category Filter Dropdown */}
       <label>
         Filter by Category:
         <select value={selectedCategory} onChange={handleCategoryChange}>
@@ -57,7 +54,6 @@ const FoodList = () => {
         </select>
       </label>
 
-      {/* Display Items */}
       <div className="food-list">
         {items.map(item => (
           <div 
